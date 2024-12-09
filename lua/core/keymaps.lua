@@ -12,20 +12,11 @@ local opts = { noremap = true, silent = true }
 -- Press jk fast to enter
 vim.keymap.set("i", "jk", "<ESC>", opts)
 
--- save file
--- vim.keymap.set('n', '<C-s>', '<cmd> w <CR>', opts)
-
--- save file without auto-formatting
--- vim.keymap.set('n', '<leader>sn', '<cmd>noautocmd w <CR>', opts)
-
--- quit file
--- vim.keymap.set('n', '<C-q>', '<cmd> q <CR>', opts)
-
 -- delete single character without copying into register
 vim.keymap.set("n", "x", '"_x', opts)
 
--- vim remaps
-vim.keymap.set("n", "E", "$", opts)
+-- search remaps
+-- vim.keymap.set("n", "/", "<leader>/", { silent = true, noremap = true })
 
 -- Vertical scroll and center
 vim.keymap.set("n", "<C-d>", "<C-d>zz", opts)
@@ -50,7 +41,6 @@ vim.keymap.set("n", "<Right>", ":vertical resize +2<CR>", opts)
 -- Window management
 vim.keymap.set("n", "<leader>v", "<C-w>v", opts) -- split window vertically
 vim.keymap.set("n", "<leader>h", "<C-w>s", opts) -- split window horizontally
-vim.keymap.set("n", "<leader>se", "<C-w>=", opts) -- make split windows equal width & height
 vim.keymap.set("n", "<leader>xs", ":close<CR>", opts) -- close current split window
 
 -- Navigate between splits
