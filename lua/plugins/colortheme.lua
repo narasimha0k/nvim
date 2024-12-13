@@ -1,17 +1,45 @@
 return {
-    'shaunsingh/nord.nvim',
-    lazy = false,
-    priority = 1000,
-    config = function()
-        -- Example config in lua
-        vim.g.nord_contrast = true
-        vim.g.nord_borders = false
-        vim.g.nord_disable_background = true 
-        vim.g.nord_italic = false
-        vim.g.nord_uniform_diff_background = true
-        vim.g.nord_bold = false
-
-        -- Load the colorscheme
-        require('nord').set()
-    end
+	{
+		"catppuccin/nvim",
+		name = "catppuccin",
+		priority = 1000,
+		opts = {
+			colorscheme = function()
+				require("catppuccin").load()
+			end,
+			no_italic = true,
+			term_colors = true,
+			transparent_background = false,
+			styles = {
+				comments = {},
+				conditionals = {},
+				loops = {},
+				functions = {},
+				keywords = {},
+				strings = {},
+				variables = {},
+				numbers = {},
+				booleans = {},
+				properties = {},
+				types = {},
+			},
+			color_overrides = {
+				mocha = {
+					base = "#000000",
+					mantle = "#000000",
+					crust = "#000000",
+				},
+			},
+			integrations = {
+				telescope = {
+					enabled = true,
+					style = "nvchad",
+				},
+				dropbar = {
+					enabled = true,
+					color_mode = true,
+				},
+			},
+		},
+	},
 }

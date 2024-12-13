@@ -27,6 +27,5 @@ require("lazy").setup({
 	require("plugins.lsp"),
 	require("plugins.autocompletion"),
 	require("plugins.misc"),
-	-- require("plugins.android"), -- ANROID PLUGIN FOR NEOVIM (custom installation done so this is no longer needed)
 	-- SETUP END
 })
