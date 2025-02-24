@@ -27,5 +27,7 @@ require("lazy").setup({
 	require("plugins.lsp"),
 	require("plugins.autocompletion"),
 	require("plugins.misc"),
+	require("plugins.nvim-java"),
+	require("plugins.noice"),
 	-- SETUP END
 })
