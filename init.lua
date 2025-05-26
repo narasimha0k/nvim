@@ -27,7 +27,8 @@ require("lazy").setup({
 	require("plugins.lsp"),
 	require("plugins.autocompletion"),
 	require("plugins.misc"),
-	require("plugins.nvim-java"),
-	require("plugins.noice"),
+	-- require("plugins.noice"),
+	require("plugins.flutter-tools"),
+
 	-- SETUP END
 })
